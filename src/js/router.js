@@ -28,10 +28,7 @@ const routes = [
   },
   {
     hash: '#/product-details',
-    loadPage: () =>
-      import('./product-details.js').then(
-        ({ productDetails }) => productDetails
-      ),
+    loadPage: () => import('./product-details.js').then(({ productDetails }) => productDetails),
     // render: productDetails,
   },
 ];

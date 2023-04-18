@@ -50,9 +50,7 @@ export function search(mainEl) {
   });
 
   const fmRadioEls = mainEl.querySelectorAll('input[name="fmRadio"]');
-  Array.from(fmRadioEls).find(
-    (el) => el.value === filters.fmRadio
-  ).checked = true;
+  Array.from(fmRadioEls).find((el) => el.value === filters.fmRadio).checked = true;
 
   for (const fmRadioEl of fmRadioEls) {
     fmRadioEl.addEventListener('input', () => {
@@ -71,8 +69,6 @@ export function search(mainEl) {
     });
 
     // coche la checkbox si filters.availability contient sa valeur
-    availabilityEl.checked = filters.availability.includes(
-      availabilityEl.value
-    );
+    availabilityEl.checked = filters.availability.includes(availabilityEl.value);
   }
 }

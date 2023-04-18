@@ -4,10 +4,11 @@
   "dependencies": {
     "date-fns": "^2.29.3"
   },
-  "scripts": {
-    "format": "prettier --write \"css/*.css\" \"js/*.js\""
-  },
   "devDependencies": {
+    "@trivago/prettier-plugin-sort-imports": "^4.1.1",
     "prettier": "^2.8.7"
+  },
+  "scripts": {
+    "format": "prettier --write \"src/**/*.{html,css,js}\""
   }
 }

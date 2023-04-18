@@ -16,9 +16,7 @@ export function productDetails(mainEl) {
 <h1>${selectedProduct.name}</h1>
 <p>${selectedProduct.description}</p>
 <ul class="phone-thumbs">
-  ${selectedProduct.images
-    .map((i) => `<li><img class="phone-thumb" src="${i}" /></li>`)
-    .join('')}
+  ${selectedProduct.images.map((i) => `<li><img class="phone-thumb" src="${i}" /></li>`).join('')}
 </ul>
   `;
 
