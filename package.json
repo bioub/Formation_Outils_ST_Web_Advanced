@@ -6,9 +6,12 @@
   },
   "devDependencies": {
     "@trivago/prettier-plugin-sort-imports": "^4.1.1",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.1",
     "prettier": "^2.8.7"
   },
   "scripts": {
+    "prepare": "husky install",
     "format": "prettier --write \"src/**/*.{html,css,js}\""
   }
 }
