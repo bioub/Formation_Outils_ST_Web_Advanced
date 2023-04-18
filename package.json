@@ -1,0 +1,13 @@
+{
+  "name": "exercice-projet",
+  "version": "1.0.0",
+  "dependencies": {
+    "date-fns": "^2.29.3"
+  },
+  "scripts": {
+    "format": "prettier --write \"css/*.css\" \"js/*.js\""
+  },
+  "devDependencies": {
+    "prettier": "^2.8.7"
+  }
+}
