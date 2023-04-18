@@ -10,6 +10,10 @@ body {
   background-color: #fff;
 }
 
+a {
+  color: #03234b;
+}
+
 header {
   display: flex;
   background-color: #03234b;
@@ -28,10 +32,6 @@ header a.active {
 
 main {
   margin: 10px;
-}
-
-a {
-  color: #03234b;
 }
 
 .btn-link {
