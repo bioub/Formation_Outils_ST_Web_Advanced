@@ -13,5 +13,8 @@
   "scripts": {
     "prepare": "husky install",
     "format": "prettier --write \"src/**/*.{html,css,js}\""
+  },
+  "lint-staged": {
+    "*.{html,css,js,json,md}": "prettier --write"
   }
 }
