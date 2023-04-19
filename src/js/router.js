@@ -4,6 +4,7 @@
 // import { productDetails } from "./product-details.js";
 // import { products } from "./products.js";
 // import { search } from "./search.js";
+import '../css/common.css';
 
 const routes = [
   {

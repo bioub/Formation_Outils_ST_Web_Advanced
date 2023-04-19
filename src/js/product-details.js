@@ -1,3 +1,4 @@
+import '../css/product-details.css';
 import { selectedProduct } from './products.js';
 
 /** @param {HTMLElement} mainEl */

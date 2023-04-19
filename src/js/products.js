@@ -1,3 +1,4 @@
+import '../css/products.css';
 import { filters } from './search.js';
 
 export let selectedProduct = null;

@@ -1,3 +1,5 @@
+import '../css/search.css';
+
 export const filters = {
   name: '',
   fmRadio: 'whatever',
