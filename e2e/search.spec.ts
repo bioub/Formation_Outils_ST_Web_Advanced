@@ -2,6 +2,7 @@ import { test, expect } from '@playwright/test';
 
 test('name contains dell', async ({ page }) => {
   await page.goto('http://localhost:3000/#/search');
+  // await page.locator('[name=name]').fill('dell');
   await page.getByRole('textbox').fill('dell');
   await page.getByRole('main').getByRole('link', { name: 'Search' }).click();
 
