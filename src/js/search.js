@@ -1,4 +1,4 @@
-import '../css/search.css';
+import styles from '../css/search.module.css';
 
 export const filters = {
   name: '',
@@ -9,12 +9,12 @@ export const filters = {
 /** @param {HTMLElement} mainEl */
 export function search(mainEl) {
   const template = `
-<div class="form-row">
-  <h3>Name</h3>
+<div class="${styles.formRow}">
+  <h3 class="${styles.searchTitle}">Name</h3>
   <input type="text" name="name" />
 </div>
-<div class="form-row">
-  <h3>FM Radio</h3>
+<div class="${styles.formRow}">
+  <h3 class="${styles.searchTitle}">FM Radio</h3>
   <label>
     <input type="radio" name="fmRadio" value="yes" />
     Yes
@@ -28,8 +28,8 @@ export function search(mainEl) {
     Whatever
   </label>
 </div>
-<div class="form-row">
-  <h3>Availability</h3>
+<div class="${styles.formRow}">
+  <h3 class="${styles.searchTitle}">Availability</h3>
   <label>
     <input type="checkbox" name="availability" value="T-Mobile" />
     T-Mobile

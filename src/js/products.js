@@ -1,4 +1,4 @@
-import '../css/products.css';
+import styles from '../css/products.module.scss';
 import { filters } from './search.js';
 
 export let selectedProduct = null;
@@ -12,7 +12,7 @@ if (selectedProductLocalStorage) {
 export async function products(mainEl) {
   let productsList = [];
   const template = `
-<table>
+<table class="${styles.table}">
   <tr>
     <th>ID</th>
     <th>Name</th>
